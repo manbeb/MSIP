@@ -41,6 +41,3 @@ async def serve_ui():
     if os.path.exists(ui_path):
         return FileResponse(ui_path)
     return HTMLResponse(content="<h1>⚠️ inference.html не найден</h1><p>Поместите файл в папку lab3/</p>")
-
-# Запуск: uvicorn lab3.app:app --reload --port 8000
-# Откройте в браузере: http://127.0.0.1:8000
